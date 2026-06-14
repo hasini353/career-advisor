@@ -43,7 +43,7 @@ const registerUser = async (req, res) => {
     }
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Server error during registration' });
+    res.status(500).json({ message: error.message || 'Server error during registration' });
   }
 };
 
@@ -70,7 +70,7 @@ const authUser = async (req, res) => {
     }
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Server error during login' });
+    res.status(500).json({ message: error.message || 'Server error during login' });
   }
 };
 
