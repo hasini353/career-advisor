@@ -18,7 +18,7 @@ const LoginForm = () => {
       await login(email, password);
       toast.success('Login successful!');
     } catch (error) {
-      toast.error('Login failed. Please check your credentials.');
+      toast.error(error.message || 'Login failed. Please check your credentials.');
     }
   };
 
