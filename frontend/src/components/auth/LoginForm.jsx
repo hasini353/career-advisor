@@ -116,13 +116,7 @@ const LoginForm = () => {
             </Link>
           </div>
 
-          <div className="mt-6 border-t border-gray-200 pt-6">
-            <div className="text-sm text-gray-600">
-              <p className="mb-2">Demo accounts:</p>
-              <p>Student: student@demo.com / password</p>
-              <p>Mentor: mentor@demo.com / password</p>
-            </div>
-          </div>
+
         </form>
       </div>
     </div>);
